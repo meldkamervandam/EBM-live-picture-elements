@@ -1,0 +1,56 @@
+{
+	"id": "ebm-picture-elements",
+	"name": "Live picture elements",
+	"description": "Displays elements on top of a floorplan.",
+	"version": "1.0.0",
+	"author": "Ecoreflect",
+	"license": "MIT",
+	"inputs": [
+		{
+			"key": "BackgroundImage",
+			"type": "Image",
+			"label": "Background Image",
+			"required": true
+		},
+		{
+			"key": "elements",
+			"label": "Elements",
+			"type": "List",
+			"itemType": {
+				"key": "element",
+				"type": "Group",
+				"label": "Element",
+				"summary": {
+					"label": "{{element_value.name}}",
+					"colorField": ""
+				},
+				"children": [
+					{
+						"key": "name",
+						"label": "Name",
+						"type": "String",
+						"required": true
+					},
+					{ 
+						"key": "element_value",
+						"type": "LiveMetric",
+						"label": "Element value",
+						"required": true
+					},
+					{
+						"key": "postop",
+						"type": "Number",
+						"label": "Position relative to the top of image",
+						"required": true
+					},
+					{
+						"key": "posleft",
+						"type": "Number",
+						"label": "Position relative to the left of image",
+						"required": true
+					}
+				]
+			}
+		}
+	]
+}
