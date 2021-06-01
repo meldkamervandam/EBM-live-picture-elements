@@ -21,7 +21,7 @@
 				"type": "Group",
 				"label": "Element",
 				"summary": {
-					"label": "{{element_value.name}}",
+					"label": "{{element.name}}",
 					"colorField": ""
 				},
 				"children": [
