@@ -7,6 +7,12 @@
 	"license": "MIT",
 	"inputs": [
 		{
+			"key": "title",
+			"label": "Title",
+			"type": "String",
+			"required": true
+		},
+		{
 			"key": "BackgroundImage",
 			"type": "Image",
 			"label": "Background Image",
