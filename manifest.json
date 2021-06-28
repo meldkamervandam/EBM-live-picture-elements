@@ -2,7 +2,7 @@
 	"id": "ebm-live-picture-elements",
 	"name": "Live picture elements",
 	"description": "Displays elements on top of a floorplan.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Ecoreflect",
 	"license": "MIT",
 	"inputs": [
@@ -43,6 +43,11 @@
 						"label": "Element value",
 						"required": true
 					},
+					{ 
+						"key": "desired_element_value",
+						"type": "LiveMetric",
+						"label": "Desired element value"
+					},
 					{
 						"key": "postop",
 						"type": "Number",
@@ -57,6 +62,12 @@
 					}
 				]
 			}
+		},
+		{
+			"key": "showDesiredElements",
+			"type": "Checkbox",
+			"label": "Show desired elements",
+			"defaultValue": false
 		}
 	]
 }
